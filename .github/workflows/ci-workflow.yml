@@ -36,4 +36,4 @@ jobs:
           --header 'Accept: */*' \
           --header 'User-Agent: Thunder Client (https://www.thunderclient.com)' \
           --header 'Content-Type: application/json' \
-          --data-raw '{"text":"Hello World"}'
+          --data-raw '{"text":"CI Job run successfully. See Results: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }} "}'
