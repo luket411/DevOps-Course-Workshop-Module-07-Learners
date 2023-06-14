@@ -25,7 +25,14 @@ jobs:
       - name: Typescript Test
         working-directory: ./DotnetTemplate.Web/Scripts/spec
         run: npm t
-      
+
       - name: Run linting
         working-directory: ./DotnetTemplate.Web
         run: npm run lint
+
+      - name: Webhook
+        uses: magdemajt/trigger-webhook@v1
+        with:
+          url: '${{ secrets.WEBHOOK_URL }}'
+          json: '{"text": "CI Job finished"}'
+          headers: '{"Content-Type": "application/json"}'
