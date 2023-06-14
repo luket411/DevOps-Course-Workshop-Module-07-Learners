@@ -1,4 +1,4 @@
-# Workshop Module 07 ![Workflow](https://github.com/luket411/DevOps-Course-Workshop-Module-07-Learners/.github/workflows/ci-workflow.yml/badge.svg)
+# Workshop Module 07 ![Workflow](https://github.com/luket411/DevOps-Course-Workshop-Module-07-Learners/actions/workflows/ci-workflow.yml/badge.svg)
 
 This repository is for learners on Corndel's DevOps apprenticeship.
 
