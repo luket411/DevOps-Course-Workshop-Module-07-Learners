@@ -9,6 +9,4 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Hello World
-        uses: actions/hello-world-javascript-action@v1.1
-        with:
-          who-to-greet: "Me"
+        run: dotnet build
