@@ -7,6 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-
-      - name: Hello World
+      - name: Build Step
         run: dotnet build
+      - name: Hello World
+        run: echo "Hello World"
