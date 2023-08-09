@@ -2,6 +2,15 @@ name: Continuous Integration
 on: [push]
 
 jobs:
+  build_docker:
+    name: Build Docker
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Build Image
+        run: docker build . --tag devops_course_image
+
   build:
     name: Build and test
     runs-on: ubuntu-latest
